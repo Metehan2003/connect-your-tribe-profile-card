@@ -1,14 +1,24 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<!-- <p><%= data.name %></p> -->
+<!-- <%- include('./partials/head') %> -->
+    <article>
+      <header>
+        <img src="<%= data.avatar %>" />
+        <h1><%= data.name %> <%= data.prefix %> <%= data.surname %></h1>np
+      </header>
+      <div class="icon">
+        <img src="images/dumbbell_563828 (1).png" class="Dumbell" />
+        <img src="images/pop.png" />
+        <img src="images/placeholder_819865.png" />
+      </div>
+      <ul>
+        <li>Gym, Amsterdam West</li>
+        <li>20 jaar</li>
+        <li>Hard work pays off</li>
+      </ul>
+    </article>
 
-  <p><%= data.name %></p>
 
-  <footer></footer>
-</article>
 
 <%- include('./partials/foot') %>
